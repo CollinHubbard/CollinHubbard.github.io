@@ -10,7 +10,8 @@ function func2(e) {
 
     newStar.style.position = "relative";
 
-    newStar.style.top = ((starCount * 100)) + "px";
+    newStar.style.top = (-1300 - (starCount * 100)) + "px";
+
     newStar.style.left = 10 + "px";
 
     var newId = "" + starCount;
@@ -18,6 +19,8 @@ function func2(e) {
     newStar.setAttribute("id", newId);
 
     newStar.style.transform = "translate3d(" + e.clientX + "px, " + e.clientY + "px, 0)";
+  
+    console.log(e.clientX);
 
     document.body.appendChild(newStar);
 
