@@ -10,7 +10,7 @@ function func2(e) {
 
     newStar.style.position = "relative";
 
-    newStar.style.top = (-280 - (starCount * 100)) + "px";
+    newStar.style.top = ((starCount * 100)) + "px";
     newStar.style.left = 10 + "px";
 
     var newId = "" + starCount;
