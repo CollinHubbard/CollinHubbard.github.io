@@ -27,16 +27,16 @@ let debug = true;
 
 let forcedCapturesEn = true;
 
-let moveSound;
-let promoSound;
+//let moveSound;
+//let promoSound;
 
 function preload() {
-  soundFormats('mp3', 'ogg');
-  moveSound = loadSound('assets/piece');
-  moveSound.setVolume(0.2);
+  //soundFormats('mp3', 'ogg');
+  //moveSound = loadSound('assets/piece');
+  //moveSound.setVolume(0.2);
 
-  promoSound = loadSound('assets/promote');
-  promoSound.setVolume(0.1);
+  //promoSound = loadSound('assets/promote');
+  //promoSound.setVolume(0.1);
 }
 
 function setup() {
@@ -209,9 +209,9 @@ function mouseReleased() {
       draggingObj.text = roundX + " " + roundY;
       if (draggingObj.y == 50 || draggingObj.y == 750) {
         draggingObj.promote();
-        promoSound.play();
+        //promoSound.play();
       }
-      moveSound.play();
+      //moveSound.play();
     } else {
       draggingObj.x = draggingObj.startX;
       draggingObj.y = draggingObj.startY;
