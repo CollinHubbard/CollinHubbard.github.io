@@ -23,7 +23,7 @@ let currTurn;
 let timer = 0;
 let timerStart = false;
 
-let debug = true;
+let debug = false;
 
 let forcedCapturesEn = true;
 
