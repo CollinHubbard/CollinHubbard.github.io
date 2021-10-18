@@ -1,70 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
-    <link href="stylesheets/main.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a relevant page title</title>
 
-    <script src="javascript/homeScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
-<body>
-
-<div class="top-banner">
-
-</div>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
 
-<div>
-    <div class="top-nav">
-        <div class="elem-nav">
-            <button class="p-nav" onclick="hideFunc(this)" id="first">First Born</button>
-
-            <div class="descript">
-                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum purus sed dolor mollis, et pellentesque quam luctus. Quisque in imperdiet dolor, eget volutpat enim. Donec molestie dictum velit, vel tincidunt justo consequat a. Aenean pharetra finibus libero, sed blandit mauris dapibus nec. Integer tortor justo, ullamcorper nec lectus a, finibus condimentum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget nunc nec velit ultricies aliquet. Suspendisse dapibus tellus eu nisi ornare tincidunt nec sit amet turpis.</span>
-            </div>
-
+  <body>
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header>
+        <div class="content-wrap">
+          <h1>Collin Hubbard</h1>
+          <h2>Georgia Tech Student</h2>
+          <br>
+          <p>Add your profile copy here. Add more paragraphs or links as needed. Here is some dummy text: </p>
+          <p>Add another paragraph if needed.</p>
         </div>
-        <div class="elem-nav">
-            <button class="p-nav" onclick="hideFunc(this)">Second first</button>
+      </header>
 
-            <div class="descript">
-                <span class="text">Quisque et bibendum diam. Praesent vitae vestibulum diam, ac ornare neque. Nam ut consectetur mauris. Morbi mi felis, dignissim at augue posuere, imperdiet sagittis nisi. Phasellus tincidunt auctor orci, id tristique nulla gravida ut. Mauris pellentesque enim sed nunc feugiat mollis. Fusce quis sollicitudin odio. Donec consequat feugiat justo. Morbi aliquet est ex, quis aliquet ante porta quis. Cras placerat arcu vel diam luctus, a mattis mi ultricies. Duis vitae eros purus.</span>
-            </div>
+      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="projects">
+        <div class="content-wrap">
+          <h2 id="projects-header">Featured Projects</h2>
+
+          <!-- Project 1 -->
+          <section class="project-item">
+            <img src="Keyboard-Minigame.png" alt="A minigame depicting a line of columns with a circle in the middle">
+            <h3>Musical Keyboard Minigame</h3>
+            <p>A minigame where rectangular tiles fall from the top of the screen and the player's goal is to move the ball into as many of them as possible. It integrates the use of sounds and random generation to make for some unique melodies.</p>
+            <p>Fully made from scratch by myself.</p> 
+            <p>Controls: use 'a' and 'd' to move the ball left and right respectivly and press space to jump</p>
+            <a href="https://collinhubbard.github.io/GamePage.html" target="_blank">Play it here!</a>
+          </section>
+
+          <!-- Project 2 -->
+          <section class="project-item">
+            <img src="checkers-game.png" alt="A blue and pink checkers game">
+            <h3>Checkers</h3>
+            <p>A checkers game, which features a bar on the top to show which players' turn it is, rule changes, and sound effects.</p>
+            <p>Fully made from scratch by myself.</p> 
+            <p>Controls: choose which rules settings you want to use and drag and drop pieces to move them</p>
+            <a href="https://collinhubbard.github.io/Messing_About_Again/checkers_index.html" target="_blank">Play it here!</a>
+          </section>
+
+          <!-- Project 3 -->
+          <section class="project-item"> 
+            <h3>Space Traders</h3>
+            <p>A simplified recreation of the classic game Space Traders made in a desert theme, with thematic music.</p>
+            <p>Made with a team of 5 people (myself included). I contributed about 50% of the code and led the team.</p> 
+            <p>The repository is private, so you will have to ask for permission to view it.</p>
+            <a href="https://github.gatech.edu/jmao64/2340-Space-Trader" target="_blank">GitHub Link</a>
+          </section>
+
+          <!-- Project 4 -->
+          <section class="project-item">
+            <h3>Long-Short Term Memory (Machine Learning Project) used to predict COVID infections based on mobility data</h3>
+            <p>This project used the deep learning technique long-short term memory in conjunction with mobility data provided by multiple sources to help predict further COVID infection rates in given states and counties of the United States.</p>
+            <br>
+            <p>Made with a team of 5 people (myself included). I contributed about 40% of the code and was heavily involved in most aspects of the project.</p> 
+            <a href="https://github.gatech.edu/chubbard9/chubbard9.github.io" target="_blank">GitHub Link</a>
+          </section>
+          <!-- End of Project block. -->
         </div>
-        <div class="elem-nav">
-            <button class="p-nav" onclick="hideFunc(this)">Next final</button>
+      </section>
 
-            <div class="descript">
-                <span class="text">Maecenas consectetur ut dui vel interdum. Cras in posuere purus. Pellentesque quis tellus vel dolor sollicitudin vestibulum at nec lectus. Integer laoreet iaculis purus, a interdum massa volutpat eget. Curabitur dignissim vestibulum congue. Morbi pulvinar quis justo ut interdum. Nullam purus lorem, pellentesque id lectus quis, suscipit sodales nunc. Nullam eget neque sed justo eleifend dignissim id ut augue. Quisque ullamcorper, tortor non aliquam tincidunt, diam eros placerat dui, at rhoncus nibh erat et augue.</span>
-            </div>
+      <!-- ******************  EDUCATION ****************** -->
+      <section class="education">
+        <div class="content-wrap">
+          <h2>Education</h2>
 
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Georgia Tech - Atlanta, GA</h3>
+            <p>2019~2022</p>
+            <p>Summary or accomplishments.</p>
+            <p>GPA: 3.90</p>
+          </section>
+          <section>
+            <h3>University of Georgia - Athens, GA</h3>
+            <p>2018~2019</p>
+            <p>GPA: 4.00</p>
+          </section>
+          <!-- End of School block. -->
         </div>
+      </section>
 
-    </div>
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer class="footer">
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
 
-
-    <img src="Resume2020-1.png" style="max-width: 500px" id="resume">
-
-
-    <div class="special">
-        <button class="spBtn" onclick="location.href='GamePage.html'">Game</button>
-        <button class="spBtn" onclick="location.href='Messing_About_Again/checkers_index.html'">Checkers</button>
-        <button class="spBtn"><a></a></button>
-        <button class="spBtn"><a></a></button>
-        <button class="spBtn"><a></a></button>
-        <button class="spBtn"><a></a></button>
-
-    </div>
-
-
-
-
-</div>
-
-
-
-
-</body>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:chubbard9@gatech.edu">chubbard9@gatech.edu</a></li>
+            <li><a href="mailto:collin.t.hubbard@gmail.edu">collin.t.hubbard@gmail.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/collin-hubbard-gatech/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
